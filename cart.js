@@ -28,8 +28,8 @@ cart.get("/cart-items", (req, res) => {
          );
      }
      if (req.query.prefix) {
-         filteredItems = filteredItems.filter((i) =>
-         i.product.startsWith(req.query.prefix)
+         filteredItems = filteredItems.filter((filteredItems) =>
+         filteredItems.product.startsWith(req.query.prefix)
          );
      }
      if (req.query.pageSize) {
